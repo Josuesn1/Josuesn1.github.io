@@ -1,68 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Primer sitio web</title>
-        <link rel="stylesheet" href="estilos.css">
-    </head>
-    <body>
-        <div id="content">
-            <header>
-                
-            </header>
-            <section id="section">
-                <article class="art">
-                    <h2>Ejercicio 5</h2>
-                    <div class="container1 ej1">Item 1</div>
-                    <p>Item 2</p>
-                    <div class="container1 ej1">Item 3</div>
-                    <p>Item 4</p>
-                    <div class="container1 ej1">Item 5</div>
-                    <p>Item 6</p>
-                    <div class="container1 ej1">Item 7</div>
-                    <p>Item 8</p>
-                    <div class="container1 ej1">Item 9</div>
-                </article>
-            </section> 
-        </div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma avanzada con accesibilidad total">
+    <title>Plataforma Accesible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo-pagina">Plataforma Accesible</h1>
+        <nav aria-label="Navegación Principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div id="content">
-            <header>
-                
-            </header>
-            <section id="section">
-                <article class="art">
-                    <h2>Ejercicio 6</h2>
-                    <div class="container1 ej1">Item 1</div>
-                    <p>Item 2</p>
-                    <div class="container1 ej1">Item 3</div>
-                    <p>Item 4</p>
-                    <div class="container1 ej2">Item 5</div>
-                    <p>Item 6</p>
-                    <div class="container1 ej1">Item 7</div>
-                    <p>Item 8</p>
-                    <div class="container1 ej1">Item 9</div>
-                </article>
-            </section> 
-        </div>
-        <div id="content">
-            <header>
-                
-            </header>
-            <section id="section">
-                <article class="art">
-                    <h2>Ejercicio 7</h2>
-                    <div class="container1 ej1">Item 1</div>
-                    <p>Item 2</p>
-                    <div class="container1 ej1">Item 3</div>
-                    <p>Item 4</p>
-                    <div class="container1 ej2">Item 5</div>
-                    <p>Item 6</p>
-                    <div class="container1 ej3">Item 7</div>
-                    <p>Item 8</p>
-                    <div class="container1 ej3">Item 9</div>
-                </article>
-            </section> 
-        </div>
-    </body>
+    <main id="inicio">
+        <section id="configuracion">
+            <h2>Herramientas de Accesibilidad</h2>
+            <div class="opciones-accesibilidad">
+                <button id="modo-contraste">Alto Contraste</button>
+                <button id="aumentar-texto">Aumentar Texto</button>
+                <button id="disminuir-texto">Disminuir Texto</button>
+                <select id="selector-idioma" aria-label="Seleccionar Idioma">
+                    <option value="" disabled selected>Selecciona un idioma...</option>
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="contenido-dinamico">
+            <h2>Bienvenido</h2>
+            <p>Este sitio está diseñado para ser accesible a todos los usuarios.</p>
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+            <p>En Plataforma Accesible, creemos en la inclusión digital. Nuestra misión es garantizar que la tecnología sea accesible para todos.</p>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>Contacto: <a href="mailto:accesible@correo.com">accesible@correo.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

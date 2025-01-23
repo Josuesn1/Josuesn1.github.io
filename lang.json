@@ -1,0 +1,18 @@
+{
+    "default": {
+        "titulo": "Selecciona un idioma",
+        "mensaje": "Usa el selector para cambiar el idioma del contenido."
+    },
+    "es": {
+        "titulo": "Bienvenido",
+        "mensaje": "Este sitio está diseñado para ser accesible a todos los usuarios."
+    },
+    "en": {
+        "titulo": "Welcome",
+        "mensaje": "This site is designed to be accessible to all users."
+    },
+    "fr": {
+        "titulo": "Bienvenue",
+        "mensaje": "Ce site est conçu pour être accessible à tous les utilisateurs."
+    }
+}
