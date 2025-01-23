@@ -2,36 +2,76 @@ document.addEventListener('DOMContentLoaded', () => {
     const contrasteButton = document.getElementById('modo-contraste');
     const aumentarTextoButton = document.getElementById('aumentar-texto');
     const disminuirTextoButton = document.getElementById('disminuir-texto');
+    const botonesNavegacion = document.querySelectorAll('.nav-btn');
+    const secciones = document.querySelectorAll('main > section');
     const selectorIdioma = document.getElementById('selector-idioma');
-    const contenidoDinamico = document.getElementById('contenido-dinamico');
+    const elementosTraducibles = document.querySelectorAll('[data-translate]');
 
-    // High Contrast Mode Toggle
+    let fontSize = 100; // Tamaño base del texto en porcentaje.
+
+    // Modo Alto Contraste
     contrasteButton.addEventListener('click', () => {
         document.body.classList.toggle('alto-contraste');
     });
 
-    // Increase Text Size
+    // Cambiar tamaño de texto
     aumentarTextoButton.addEventListener('click', () => {
-        const currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
-        document.body.style.fontSize = `${currentSize + 2}px`;
+        if (fontSize < 150) { // Límite máximo: 150%
+            fontSize += 10;
+            document.body.style.fontSize = `${fontSize}%`;
+        }
     });
 
-    // Decrease Text Size
     disminuirTextoButton.addEventListener('click', () => {
-        const currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
-        document.body.style.fontSize = `${Math.max(currentSize - 2, 12)}px`; // Prevent text size smaller than 12px
+        if (fontSize > 70) { // Límite mínimo: 70%
+            fontSize -= 10;
+            document.body.style.fontSize = `${fontSize}%`;
+        }
     });
 
-    // Language Selector
-    selectorIdioma.addEventListener('change', (e) => {
-        const idioma = e.target.value;
+
+
+    // Función para alternar entre secciones
+    const mostrarSeccion = (id) => {
+        secciones.forEach((seccion) => {
+            seccion.classList.add('seccion-oculta');
+            seccion.classList.remove('seccion-activa');
+        });
+        const seccionSeleccionada = document.getElementById(id);
+        if (seccionSeleccionada) {
+            seccionSeleccionada.classList.add('seccion-activa');
+            seccionSeleccionada.classList.remove('seccion-oculta');
+        }
+    };
+
+    // Función para traducir contenido
+    const traducirPagina = (idioma) => {
         fetch('lang.json')
             .then((response) => response.json())
             .then((data) => {
                 const traducciones = data[idioma];
-                contenidoDinamico.querySelector('h2').textContent = traducciones.titulo;
-                contenidoDinamico.querySelector('p').textContent = traducciones.mensaje;
+                elementosTraducibles.forEach((elemento) => {
+                    const clave = elemento.getAttribute('data-translate');
+                    if (traducciones[clave]) {
+                        elemento.textContent = traducciones[clave];
+                    }
+                });
             })
             .catch((error) => console.error('Error al cargar las traducciones:', error));
+    };
+
+    // Eventos
+    botonesNavegacion.forEach((boton) => {
+        boton.addEventListener('click', () => {
+            const seccionId = boton.dataset.section;
+            mostrarSeccion(seccionId);
+        });
+    });
+
+    selectorIdioma.addEventListener('change', (e) => {
+        traducirPagina(e.target.value);
     });
 });
+
+
+

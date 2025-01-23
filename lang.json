@@ -1,18 +1,62 @@
 {
-    "default": {
-        "titulo": "Selecciona un idioma",
-        "mensaje": "Usa el selector para cambiar el idioma del contenido."
-    },
     "es": {
-        "titulo": "Bienvenido",
-        "mensaje": "Este sitio está diseñado para ser accesible a todos los usuarios."
+        "titulo": "Plataforma Accesible",
+        "inicio-btn": "Inicio",
+        "acerca-btn": "Acerca de Nosotros",
+        "contacto-btn": "Contacto",
+        "bienvenido-titulo": "Bienvenido",
+        "bienvenido-mensaje": "Este sitio está diseñado para ser accesible a todos los usuarios.",
+        "alto-contraste-btn": "Alto Contraste",
+        "aumentar-texto-btn": "Aumentar Texto",
+        "disminuir-texto-btn": "Disminuir Texto",
+        "placeholder-idioma": "Selecciona un idioma",
+        "espanol-op": "Español",
+        "ingles-op": "Inglés",
+        "frances-op": "Francés",
+        "acerca-titulo": "Acerca de Nosotros",
+        "acerca-mensaje": "En Plataforma Accesible, creemos en la inclusión digital. Nuestra misión es garantizar que la tecnología sea accesible para todos.",
+        "contacto-titulo": "Contacto",
+        "contacto-mensaje": "Contacto: accesible@correo.com",
+        "footer-mensaje": " C 2025 Plataforma Accesible. Todos los derechos reservados."
     },
     "en": {
-        "titulo": "Welcome",
-        "mensaje": "This site is designed to be accessible to all users."
+        "titulo": "Accessible Platform",
+        "inicio-btn": "Home",
+        "acerca-btn": "About Us",
+        "contacto-btn": "Contact",
+        "bienvenido-titulo": "Welcome",
+        "bienvenido-mensaje": "This site is designed to be accessible to all users.",
+        "alto-contraste-btn": "High Contrast",
+        "aumentar-texto-btn": "Increase Text",
+        "disminuir-texto-btn": "Decrease Text",
+        "placeholder-idioma": "Select a language",
+        "espanol-op": "Spanish",
+        "ingles-op": "English",
+        "frances-op": "French",
+        "acerca-titulo": "About Us",
+        "acerca-mensaje": "At Accessible Platform, we believe in digital inclusion. Our mission is to ensure technology is accessible to everyone.",
+        "contacto-titulo": "Contact",
+        "contacto-mensaje": "Contact: accesible@correo.com",
+        "footer-mensaje": "C 2025 Accessible Platform. All rights reserved."
     },
     "fr": {
-        "titulo": "Bienvenue",
-        "mensaje": "Ce site est conçu pour être accessible à tous les utilisateurs."
+        "titulo": "Plateforme Accessible",
+        "inicio-btn": "Accueil",
+        "acerca-btn": "À propos de nous",
+        "contacto-btn": "Contact",
+        "bienvenido-titulo": "Bienvenue",
+        "bienvenido-mensaje": "Ce site est conçu pour être accessible à tous les utilisateurs.",
+        "alto-contraste-btn": "Contraste Élevé",
+        "aumentar-texto-btn": "Augmenter le Texte",
+        "disminuir-texto-btn": "Diminuer le Texte",
+        "placeholder-idioma": "Choisissez une langue",
+        "espanol-op": "Espagnol",
+        "ingles-op": "Anglais",
+        "frances-op": "Français",
+        "acerca-titulo": "À propos de nous",
+        "acerca-mensaje": "Sur Plateforme Accessible, nous croyons en l'inclusion numérique. Notre mission est de garantir que la technologie soit accessible à tous.",
+        "contacto-titulo": "Contact",
+        "contacto-mensaje": "Contact : accesible@correo.com",
+        "footer-mensaje": "C 2025 Plateforme Accessible. Tous droits réservés."
     }
 }

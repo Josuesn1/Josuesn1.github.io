@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #004a99;
+    background-color: #2283eb;
     color: white;
     padding: 1.5rem 0;
     text-align: center;
@@ -89,6 +89,37 @@ select {
     color: #333;
     border: 1px solid #004a99;
 }
+
+
+/* Secciones ocultas y activas */
+.seccion-oculta {
+    display: none;
+}
+
+.seccion-activa {
+    display: block;
+}
+
+/* Botones de navegación */
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background-color: #003366;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
 
 /* High Contrast Mode */
 body.alto-contraste {

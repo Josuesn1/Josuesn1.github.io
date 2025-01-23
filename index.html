@@ -9,45 +9,46 @@
 </head>
 <body>
     <header>
-        <h1 id="titulo-pagina">Plataforma Accesible</h1>
+        <h1 id="titulo-pagina" data-translate="titulo">Plataforma Accesible</h1>
         <nav aria-label="Navegación Principal">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><button class="nav-btn" data-section="inicio" data-translate="inicio-btn">Inicio</button></li>
+                <li><button class="nav-btn" data-section="acerca" data-translate="acerca-btn">Acerca </button></li>
+                <li><button class="nav-btn" data-section="contacto" data-translate="contacto-btn">Contacto</button></li>
             </ul>
         </nav>
     </header>
 
-    <main id="inicio">
-        <section id="configuracion">
-            <h2>Herramientas de Accesibilidad</h2>
+    <main>
+        <section id="inicio" class="seccion-activa">
+            <h2 data-translate="bienvenido-titulo">Bienvenido</h2>
+            <p data-translate="bienvenido-mensaje">Este sitio está diseñado para ser accesible a todos los usuarios.</p>
             <div class="opciones-accesibilidad">
-                <button id="modo-contraste">Alto Contraste</button>
-                <button id="aumentar-texto">Aumentar Texto</button>
-                <button id="disminuir-texto">Disminuir Texto</button>
+                <button id="modo-contraste" data-translate="alto-contraste-btn">Alto Contraste</button>
+                <button id="aumentar-texto" data-translate="aumentar-texto-btn">Aumentar Texto</button>
+                <button id="disminuir-texto" data-translate="disminuir-texto-btn">Disminuir Texto</button>
                 <select id="selector-idioma" aria-label="Seleccionar Idioma">
-                    <option value="" disabled selected>Selecciona un idioma...</option>
-                    <option value="es">Español</option>
-                    <option value="en">Inglés</option>
-                    <option value="fr">Francés</option>
+                    <option value="" disabled selected data-translate="placeholder-idioma">Selecciona un idioma</option>
+                    <option value="es" data-translate="espanol-op">Español</option>
+                    <option value="en" data-translate="ingles-op">Inglés</option>
+                    <option value="fr" data-translate="frances-op">Francés</option>
                 </select>
             </div>
         </section>
 
-        <section id="contenido-dinamico">
-            <h2>Bienvenido</h2>
-            <p>Este sitio está diseñado para ser accesible a todos los usuarios.</p>
+        <section id="acerca" class="seccion-oculta">
+            <h2 data-translate="acerca-titulo">Acerca de Nosotros</h2>
+            <p data-translate="acerca-mensaje">En Plataforma Accesible, creemos en la inclusión digital. Nuestra misión es garantizar que la tecnología sea accesible para todos.</p>
         </section>
 
-        <section id="acerca">
-            <h2>Acerca de Nosotros</h2>
-            <p>En Plataforma Accesible, creemos en la inclusión digital. Nuestra misión es garantizar que la tecnología sea accesible para todos.</p>
+        <section id="contacto" class="seccion-oculta">
+            <h2 data-translate="contacto-titulo">Contacto</h2>
+            <p data-translate="contacto-mensaje">Contacto: <a href="mailto:accesible@correo.com">accesible@correo.com</a></p>
         </section>
     </main>
 
-    <footer id="contacto">
-        <p>Contacto: <a href="mailto:accesible@correo.com">accesible@correo.com</a></p>
+    <footer>
+        <p data-translate="footer-mensaje"> &copy; 2025 Plataforma Accesible. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
