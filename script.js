@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const secciones = document.querySelectorAll('main > section');
     const selectorIdioma = document.getElementById('selector-idioma');
     const elementosTraducibles = document.querySelectorAll('[data-translate]');
-
     let fontSize = 100; // Tamaño base del texto en porcentaje.
-
     // Modo Alto Contraste
     contrasteButton.addEventListener('click', () => {
         document.body.classList.toggle('alto-contraste');
@@ -28,8 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.fontSize = `${fontSize}%`;
         }
     });
-
-
 
     // Función para alternar entre secciones
     const mostrarSeccion = (id) => {
